@@ -1,7 +1,7 @@
 
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
-% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\renewcommand{\baselinestretch}{1.5}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
@@ -24,7 +24,7 @@
 \IEEEauthorblockA{\textit{repachona@correo.udistrital.edu.co,}}}
 
 \maketitle
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \textbf{\textit{Resumen--}
 Se busca determinar el comportamiento de la felicidad de los estudiantes en función de variables que, con base en otros estudios y sentido común, son influyentes en esta. Puesto que en los últimos años en la universidad la tasa de deserción ha aumentado, haciendo uso de una encuesta que incluye como sub encuesta The Oxford Happiness Questionnaire para hallar el índice de felicidad y complementando con otra sub encuesta experimental basada en las variables encontradas, se desea encontrar cuales de estas variables son realmente influyentes en la felicidad de los estudiantes. Utilizando como herramienta el software SPSS (Statistical Package for the Social Sciences), como primer paso se pretende comprobar la fiabilidad de ambas sub encuestas, donde se corrobora el alto coeficiente de fiabilidad de la primera, y se hace un detenido análisis sobre la segunda, esto debido a su bajo coeficiente de fiabilidad. Como segundo paso, se aplica el modelo de Regresión Logística Binaria para lograr el objetivo ya mencionado, donde variables como “Es creyente” y “Estado Civil” arrojan resultado positivo en cuanto a significancia, no obstante, se tiene en cuenta que estos hallazgos pueden ser solo aplicables a un pequeño porcentaje de la población, ya que estos son totalmente dependientes de la fiabilidad.\\\\
 Índice de Términos – Análisis, Correlación, Covarianza, Encuesta, Escala, Ecuación, Fiabilidad, Felicidad, Matriz, Probabilidad, Programa, Regresión, Satisfacción Personal, Variable.\\}
@@ -32,10 +32,12 @@ Se busca determinar el comportamiento de la felicidad de los estudiantes en func
 \section{INTRODUCCIÓN}\\
 
 
-\IEEEPARstart{E}{\\}l  concepto de felicidad ha desconcertado al ser humano a lo largo de su existencia como especie. Por lo que ha desarrollado una gran variedad de definiciones e investigaciones en torno a este concepto. Estas definiciones han tenido diversos factores sobre los cuales se soportan. Debido a la variación de los parámetros empleados para el desarrollo de estas investigaciones se han precisado algunas perspectivas como: Alarcón [1], basado en la filosofía griega y los recientes estudios, la define como: “un estado de satisfacción, más o menos duradero, que experimenta subjetivamente el individuo en posesión de un bien deseado”, también se han generado perspectivas opuestas como: Fernández D.[2] propone que los factores que influyen en la felicidad, radican en nuestro interior y poco tiene que ver con la acumulación de bienes. \\
+\IEEEPARstart{E}{\\}l concepto de felicidad ha desconcertado al ser humano a lo largo de su existencia como especie. Por lo que ha desarrollado una gran variedad de definiciones e investigaciones en torno a este concepto. Estas definiciones han tenido diversos factores sobre los cuales se soportan. Debido a la variación de los parámetros empleados para el desarrollo de estas investigaciones se han precisado algunas perspectivas como: Alarcón [1], basado en la filosofía griega y los recientes estudios, la define como: “un estado de satisfacción, más o menos duradero, que experimenta subjetivamente el individuo en posesión de un bien deseado”, también se han generado perspectivas opuestas como: Fernández D. [2] propone que los factores que influyen en la felicidad, radican en nuestro interior y poco tiene que ver con la acumulación de bienes.\\
+
    Si bien es debatible que la vida universitaria es uno de los estilos de vida más estresantes, se sabe que hay muchos casos donde los estudiantes universitarios dicen sentirse estresados o presionados por diferentes factores tales como lo son realización de exámenes, trabajos individuales y grupales, practicas, fechas de entrega, establecimiento de relaciones sociales, etc. [3] Muchas veces al buscar una alternativa para vencer el estrés se tiene el consumo de alcohol, el cual tiene como “beneficio” la aceptación y un mejor ajuste psicosocial [4], sin embargo también está la caída de rendimiento académico debido a su abuso, lo cual conlleva a posibles estados de depresión y problemas de salud. [5]\\
 
-   Como se puede observar, la felicidad es un caso de estudio que tiene investigaciones desde una perspectiva muy general hasta una bastante específica, no obstante, esta tendrá un mayor enfoque hacia la satisfacción del estudiante, donde se estará en una constante búsqueda de lograr una educación orientada hacia la felicidad del estudiante, para que análogamente se logre una disminución en la tasa de deserción que hay actualmente. \\
+   Como se puede observar, la felicidad es un caso de estudio que tiene investigaciones desde una perspectiva muy general hasta una bastante específica, no obstante, esta tendrá un mayor enfoque hacia la satisfacción del estudiante, donde se estará en una constante búsqueda de lograr una educación orientada hacia la felicidad del estudiante, para que análogamente se logre una disminución en la tasa de deserción que hay actualmente.\\
+
 
 
 \section{METODOLOGÍA}\\
@@ -95,16 +97,12 @@ Totalmente de acuerdo & Totalmente de acuerdo & 5\\ \hline
 }
 \end{center}
 \end{table}
-Como herramienta principal se usó el software SPSS (Statistical Package for the Social Sciences), el cual es un programa destinado al análisis de datos ofrecido por IBM. Este contiene todas las herramientas necesarias para llevar a cabo completos estudios estadísticos. Gracias a él es posible realizar recopilación de datos, crear estadísticas, análisis de decisiones de gestión y manejo de gráficos de datos obtenidos [7]\\
-   
-   \begin{center}
-\caption{Imagen 1: icono IBM SPSS}\\
-\includegraphics{imagenes/1}
-\end{center}
+   Como herramienta principal se usó el software SPSS (Statistical Package for the Social Sciences), el cual es un programa destinado al análisis de datos ofrecido por IBM. Este contiene todas las herramientas necesarias para llevar a cabo completos estudios estadísticos. Gracias a él es posible realizar recopilación de datos, crear estadísticas, análisis de decisiones de gestión y manejo de gráficos de datos obtenidos\\               
 
-  Esta nos ofrece una manera sencilla de hacer los análisis introduciendo la serie de datos que tenemos de la encuesta, y con una secuencia paso a paso podemos aplicar fácilmente los modelos matemáticos para hacer los análisis de fiabilidad y regresión.\\    
-  
-  También se hará uso de estadísticos descriptivos en el software para obtener un panorama mas general acerca de los resultados.\\
+   Esta nos ofrece una manera sencilla de hacer los análisis introduciendo la serie de datos que tenemos de la encuesta, y con una secuencia paso a paso podemos aplicar fácilmente los modelos matemáticos para hacer los análisis de fiabilidad y regresión. \\  
+
+   También se hará uso de estadísticos descriptivos en el software para obtener un panorama más general acerca de los resultados.\\
+
 \subsection{Procedimiento}
    Para el posterior tratamiento de los datos obtenidos en la encuesta se aplica el procedimiento realizado en la encuesta de Oxford, con la finalidad de determinar el valor que tendrá nuestra variable dependiente en cada uno de los registros. Este valor se determina hallando el promedio de las respuestas dadas en el cuestionario este resultado en el trabajo de Oxford es un número entre 1 y 6 sin embargo teniendo en cuenta el cambio en la escala de Likert realizada el resultado en este caso será un numero entre 1 y 5. En cuanto al valor que se debe asignar a la variable principal, para el tipo de análisis que se desea aplicar, es dicótomo, por lo que se decidió hallar el promedio de las calificaciones de todos los encuestados y utilizar ese valor como punto de quiebre entre los dos respuestas “Es Feliz” y “No es Feliz”.\\
    \begin{table}[h]
@@ -121,78 +119,9 @@ Como herramienta principal se usó el software SPSS (Statistical Package for the
 \end{tabular}
 \end{center}
 \end{table}
-1)	Importar Datos\\
-Comenzamos abriendo el software IBM SPSS cuyo icono
-se ha mostrado anteriormente. Se desplegará la interfaz del
-software creando una hoja de datos automáticamente. La
-interfaz del software está estructurada de la siguiente manera:\\
+   Se tiene la versión 25 del software SPSS, donde se procede a hacer la importación de los datos que se obtienen de la encuesta que están en formato CSV, luego de eso en la pestaña analizar tenemos diferentes opciones, donde una de ellas es el análisis de fiabilidad. Para el caso de la encuesta de Oxford, solo se deben seleccionar las 29 preguntas que hacen parte de esta, luego, haciendo el mismo procedimiento, se hace el análisis de fiabilidad, pero en este caso solamente de las variables independientes.\\
 
-
-
-  \begin{center}
-\caption{Imagen 2: Interfaz IBM SPSS}\\
-\includegraphics{imagenes/2.png}
-\end{center}
-   Procederemos a ingresar la información a estudiar, para esto podemos hacerlo ya sea de forma manual, creando variables e ingresando los datos correspondientes, o de manera automática en el caso de poseer los datos almacenados en una base de datos o un archivo compatible con el software SPSS, para esto último solo será necesario importarlos. En este caso las respuestas de la encuesta de la felicidad realizada a los estudiantes se encuentran en formato CSV. Para ello en la barra de menús encontraremos el título archivo al seleccionarlo, se desplegará una serie de opciones, entre ellas importar datos y elegimos Datos CSV, de esta manera el software automáticamente ingresa los datos desde el archivo CSV [8].\\
-\begin{center}
-\caption{Imagen 3: Importación de datos en IBM SPSS}\\
-\includegraphics[scale=1]{imagenes/IMAGEN3.png}
-\end{center}
-   Después de seguir los pasos anteriores, se debe actualizar la interfaz grafica del programa con los datos y se debe obtener algo como lo que se muestra en la siguiente imagen: \\
-\begin{center}
-\caption{Imagen 4: Importación de datos en IBM SPSS}\\
-\includegraphics[scale=1]{imagenes/4.png}
-\end{center}
-2) Análisis de fiabilidad\\ Iremos a la barra de menús en la opción analizar, alli seleccionamos escala.\\
-
-\begin{center}
-\caption{Imagen 5 : Paso 1 analisis de fiablidad}\\
-\includegraphics[width=8.5cm]{imagenes/Paso5}
-\end{center}
-
-Una vez seleccionada la opción escala, en el menú desplegado seleccionamos análisis de fidelidad.\\
-
-\begin{center}
-\caption{Imagen 6 : Paso 2 analisis de fiablidad}\\
-\includegraphics[width=8.5cm]{imagenes/Paso4}
-\end{center}
-      Se abrirá una ventana, donde tendremos que arrastrar las variables a estudiar con el Alfa de Cronbach, esto para evitar añadir variables como fecha, promedio o estrato que, aunque poseen valores numéricos no están estandarizados en la tabla de datos. \\
-
-\begin{center}
-\caption{Imagen 7 : Paso  3 analisis de fiablidad}\\
-\includegraphics[width=8.5cm]{imagenes/Paso6.png}
-\end{center}
-Se arrastran las preguntas que tomaremos como variables en él estudia al cuadro de elementos, escogeremos en el modelo: la opción Alfa, si se desea encontrar otros valores relacionados al alfa pulsaremos el botón superior derecho con nombre estadísticos.\\
-
-Para realizar al tiempo otros cálculos con los datos, elegimos aquellos necesarios como las medias, la varianza, las correlaciones y las covarianzas, pulsamos continuar y por último presionamos el botón aceptar para ejecutar.\\
-
-\begin{center}
-\caption{Imagen 8 : Paso  4 analisis de fiablidad}\\
-\includegraphics[width=8.5cm]{imagenes/IMAGEN7.png}
-\end{center}
-El software procesara los datos y realiza el análisis de fiabilidad, de que tan confiable son las muestras tomadas respecto a su veracidad.\\   
-
-Por último, se abrirá una nueva ventana con los resultados obtenidos que se analizaran en el apartado de resultados.\\   
-
-3)	Regresión Logística Binaria [10]\\
-
- Para realizar el proceso de la regresión logística binaria se debe llevar a cabo un procedimiento similar al del análisis de fiabilidad, para empezar, seleccionamos el menú de análisis luego en el menú desplegable de regresión seleccionamos la opción logística binaria.\\
-
-\begin{center}
-\caption{Imagen 9 : Paso 1 regresión Logística binaria}\\
-\includegraphics[width=8.5cm]{imagenes/Paso3}
-\end{center}
-El siguiente paso consiste en asignar los datos requeridos para realizar el proceso, en este tipo de regresión, se debe asignar una variable dependiente de carácter dicótomo y una serie de variables independientes.\\\\
-\begin{center}
-\caption{Imagen 10 : Paso 2 regresión Logística binaria}\\
-\includegraphics[width=8.5cm]{imagenes/Paso10}
-\end{center}
-   En caso de requerir resultados con diferentes tipos de evaluación y medida, los ajustes necesarios se pueden realizar en la pestaña que emerge del botón estadísticas. \\\\
-\begin{center}
-\caption{Imagen 11 : Paso 3 regresión Logística binaria}\\
-\includegraphics[width=8.5cm]{imagenes/IMAGEN10.png}
-\end{center}
-   Una vez se realicen los ajustes pertinentes se pulsa el botón continuar y posteriormente pulsar aceptar y se abrirá una ventana con los resultados solicitados.\\
+   Por otro lado, con la regresión logística binaria, se accede al apartado que dice regresión que está en la pestaña ya mencionada, allí se selecciona regresión logística binaria y se mostrara una nueva ventana donde se debe introducir la variable dependiente y las variables independientes, finalmente se debe finalizar el procedimiento para obtener las tablas de los resultados.\\
 
 \section{Resultados}\\
  En términos generales, podemos observar el comportamiento de los encuestados en cuanto a la encuesta de Oxford haciendo uso de simples estadísticos descriptivos, donde podemos observar: \\
@@ -269,70 +198,33 @@ P\left(FELICIDAD=SI\right)=\frac{1}{\left(1+e^{\left(\left(-2.090-\left(-1.209\c
   
   Los datos obtenidos del desarrollo de este trabajo   indican que tanto la herramienta de recolección (encuesta) como los resultados son confiables en cuanto a las preguntas obtenidas de Oxford Happiness Questionnaire, de esta manera se valida la efectividad de este cuestionario. Para las preguntas incluidas en la encuesta desarrollada se empleó el análisis KR- 20 y la regresión logística binaria para determinar cuáles de las variables propuestas realmente tenían una relación directa con la felicidad. En este proceso se determinó como variables significativas “Es creyente” y “Estado civil”, en donde estas explican el modelo de manera correcta entre un 13\% y un 18\%. por lo cual es necesario encontrar más variables para predecir la variable principal de una manera más completa y exacta. Para la primera variable encontrada se determinó que su valor se relaciona de manera directamente proporcional con la variable principal cuando su valor es “no creyente”, mientras que el valor de estado civil es directamente proporcional respecto a la variable principal cuando las personas son solteras. Por lo tanto, se obtiene que dentro del aglomerado estudiantil de la Universidad Distrital Francisco José de Caldas las dos características anteriormente mencionadas parcialmente a las personas identificadas como felices.\\\
  
-\section{DISCUSION} 
-A pesar de no poder obtener resultados contundentes, se puede comprobar la tendencia de que las variables “Es creyente” y “Estado civil” son significativas en el momento de predecir la felicidad en determinado grupo estudiado, como lo es en este caso en estudiantes universitarios. En base al caso de estudio de  Gamero Tafur, Medina Martínez y Escobar Espinoza [11] podemos evidenciar que estas variables también jugaron un papel importante en su investigación, sin embargo cabe aclarar que las probabilidades que ellos obtuvieron fueron totalmente distintas a las de este estudio, puesto que como ejemplo en la variable “Estado Civil”, en este estudio se obtiene mayor probabilidad de predicción de 73.34\% de que una persona sea feliz cuando esta soltera, caso contrario al del estudio referenciado, donde el matrimonio es significativo e importante debido a las satisfacciones que genera la confianza y el intercambio de confidencias y opiniones entre esta cooperativa [14], no obstante podemos tener en cuenta que hablar de matrimonio es un caso en el cual la edad promedio de la realización de este es entre los 28 y 32 años [15] y considerando que más del 50\% de los encuestados son menores de 20 años, hablar de matrimonio puede ser no muy coherente, puesto que muchos jóvenes de hoy en día piensan diferente en cuanto a la vida en pareja. Eliakim Kislev, afirma que los solteros cuentan con un mayor poder de sentir felicidad y satisfacción, por ende, son menos egoístas a diferencia de aquellos que llevan una vida en pareja. [16]\\
+\section{DISCUSION}\\
 
-   Un soltero regularmente, no quiere decir que así sea en todos los casos, experimenta mayor libertad, ya que no tiene que llegar a acuerdos con alguien más durante la toma de decisiones. Los solteros se sienten más completos en su profesión, vida diaria, vida social y más, sobre todo con mayor libertad para hacer planes [17], y con esto viene conjunto otras configuraciones de pareja  como “amigos con derecho”, “amigovios”, “parche”, “relaciones sexuales”, “relaciones virtuales”, frente a relaciones con compromiso, amor, confianza y construcción de intimidad [18] que actualmente muchos jóvenes practican, con esto podemos decir de forma más general que la felicidad en función de la variable estado civil es totalmente dependiente del grupo de edades estudiado, por otro lado, podemos observar la investigación hecha por Macaya Sazo, Marlene Fernandan [19], en el cual la muestra fue de hombres y mujeres de un rango de edad entre 18 y 30 y donde se concluye que las variables que se relacionan con aspectos relacionales o afectivos, son las que explican en su mayoría el nivel de felicidad de estos estudiantes, con lo que podemos afirmar que esta variable siempre se debe incluir en futuros estudios.\\
+A pesar de no poder obtener resultados contundentes, se puede comprobar la tendencia de que las variables “Es creyente” y “Estado civil” son significativas en el momento de predecir la felicidad en determinado grupo estudiado, como lo es en este caso en estudiantes universitarios. En base al caso de estudio de  Gamero Tafur, Medina Martínez y Escobar Espinoza [7] podemos evidenciar que estas variables también jugaron un papel importante en su investigación, sin embargo cabe aclarar que las probabilidades que ellos obtuvieron fueron totalmente distintas a las de este estudio, puesto que como ejemplo en la variable “Estado Civil”, en este estudio se obtiene mayor probabilidad de predicción de 73.34\% de que una persona sea feliz cuando esta soltera, caso contrario al del estudio referenciado, donde el matrimonio es significativo e importante debido a las satisfacciones que genera la confianza y el intercambio de confidencias y opiniones entre esta cooperativa [8], no obstante podemos tener en cuenta que hablar de matrimonio es un caso en el cual la edad promedio de la realización de este es entre los 28 y 32 años [9] y considerando que más del 50\% de los encuestados son menores de 20 años, hablar de matrimonio puede ser no muy coherente, puesto que muchos jóvenes de hoy en día piensan diferente en cuanto a la vida en pareja. Eliakim Kislev [10], afirma que los solteros cuentan con un mayor poder de sentir felicidad y satisfacción, por ende, son menos egoístas a diferencia de aquellos que llevan una vida en pareja.
 
-   En cuanto a la variable “Es creyente”  tomando como base la investigación hecha por Gamero Tafur, Medina Martínez, Escobar Espinoza [11], se muestra que esta tiene una discrepancia en el modelo explicativo de la felicidad, esta información revela una  diferencia existente entre la percepción de la religión entre las  distintas poblaciones, pues en este estudio, se evidencia que las personas no creyentes o dicho de otra manera, no practicantes de alguna religión tienen mayor probabilidad de ser felices y teniendo en cuenta una encuesta una encuesta internacional realizada por la empresa Gallup [20] hecha entre 2005 y 2011 revela que el número de personas que se consideran religiosas disminuyo de un 77\% a un 68\% y esto lo tenemos como una tendencia que va en aumento con el tiempo. Nigel Barber en su libro Why Atheism Will Replace Religion?, explica que la religión ha sido durante siglos una creación cultural elaborada para aplacar con la angustia que genera vivir en entornos altamente inestables y peligrosos, en los que el peligro y la escasez de recursos acecha en el día a día. La idea de la muerte y la sensación de desamparo podrían ser sobrellevadas mejor creyendo que la propia vida tiene que ver con una creación llena de trascendencia ultraterrena. En estos contextos, era útil [21]. Sin embargo, factores como la educación, y el alza de la posibilidad de recibir conocimiento científico en los últimos años, hace que la gente tenga más posibilidades de tener una vida relativamente cómoda, donde los estudiantes universitarios tienen un mayor acceso a esta hablando de recursos educativos. Por tanto, podemos afirmar una tendencia en la que ser creyente de alguna religión con el tiempo no va a generar mayores satisfacciones, donde con el pasar de los años la sociedad se vuelve de una u otra manera más atraída y satisfecha con los bienes materiales [22].\\
+   Un soltero regularmente, no quiere decir que así sea en todos los casos, experimenta mayor libertad, ya que no tiene que llegar a acuerdos con alguien más durante la toma de decisiones. Los solteros se sienten más completos en su profesión, vida diaria, vida social y más, sobre todo con mayor libertad para hacer planes [10], y con esto viene conjunto otras configuraciones de pareja  como “amigos con derecho”, “amigovios”, “parche”, “relaciones sexuales”, “relaciones virtuales”, frente a relaciones con compromiso, amor, confianza y construcción de intimidad [11] que actualmente muchos jóvenes practican, con esto podemos decir de forma más general que la felicidad en función de la variable estado civil es totalmente dependiente del grupo de edades estudiado, por otro lado, podemos observar la investigación hecha por Macaya Sazo, Marlene Fernandan [12], en el cual la muestra fue de hombres y mujeres de un rango de edad entre 18 y 30 y donde se concluye que las variables que se relacionan con aspectos relacionales o afectivos, son las que explican en su mayoría el nivel de felicidad de estos estudiantes, con lo que podemos afirmar que esta variable siempre se debe incluir en futuros estudios.
+
+   En cuanto a la variable “Es creyente”  tomando de nuevo como base la investigación hecha por Gamero Tafur, Medina Martínez, Escobar Espinoza [7], se muestra que esta tiene una discrepancia en el modelo explicativo de la felicidad, esta información revela una  diferencia existente entre la percepción de la religión entre las  distintas poblaciones, pues en este estudio, se evidencia que las personas no creyentes o dicho de otra manera, no practicantes de alguna religión tienen mayor probabilidad de ser felices y teniendo en cuenta una encuesta una encuesta internacional realizada por la empresa Gallup [13] hecha entre 2005 y 2011 revela que el número de personas que se consideran religiosas disminuyo de un 77\% a un 68\% y esto lo tenemos como una tendencia que va en aumento con el tiempo.
 
 
 
-Oxford Happiness Questionnaire\\
-\begin{itemize}
-\item 	No me gusta mucho mi forma de ser
-\item 	Me intereso mucho por los demás
-\item 	Creo que la vida es muy gratificante
-\item 	Siento mucho afecto por casi todo el mundo
-\item 	Pocas veces me levanto descansado/a
-\item 	No soy muy optimista respecto al futuro
-\item 	Encuentro muchas cosas divertidas
-\item 	Me comprometo e involucro en muchas cosas
-\item 	La vida es muy bonita
-\item 	No pienso que el mundo sea un lugar agradable
-\item 	Me río mucho
-\item 	Estoy muy satisfecho/a con mi vida
-\item 	No me encuentro atractivo/a
-\item 	Hay una gran diferencia entre lo que me gustaría hacer y lo que realmente hago
-\item 	Soy muy feliz
-\item 	Encuentro hermosas muchas cosas
-\item 	Siempre influyo positivamente en los demás
-\item 	Tengo tiempo para hacer todo lo que quiero
-\item 	Siento que no tengo mucho control sobre mi vida
-\item 	Me siento capaz de tomar decisiones
-\item 	Me siento mentalmente despierto/a
-\item 	Generalmente, soy alegre y optimista
-\item 	No me resulta fácil tomar decisiones
-\item 	No encuentro mucho significado y sentido a mi vida
-\item 	Me siento con mucha energía
-\item 	Suelo influir positivamente en los acontecimientos
-\item 	No me divierto con otras personas
-\item 	No me encuentro muy bien de salud
-\item 	No tengo recuerdos muy felices del pasado
-\end{itemize}
+
 \begin{thebibliography}{99}
-\bibitem{c1}R. Alarcon, «Desarrollo de una escala factorial para medir la felicidad,» Interamerican Journal of Psychology, 2006, pp. 95-102.
-\bibitem{c2}M. R. F. Fernández D., Construyendo nuestra felicidad para ayudar a construirla, 2009, pp. 231-239.
-\bibitem{c3}H. Figueiredo-Ferraz, S. Cardona y P. Gil Monte, «Desgaste psíquico y problemas de salud en estudiantes de psicologia,» Psicologia em Estudo, 2009. 
-\bibitem{c4}M. Newcomb y P. Bentler, «Impact of adolescent drug use and social support on problems of young adults: A longitufinal study,» Journal of Abnormal, pp. 64-75, 1988. 
-\bibitem{c5}S. Casswell, Ru Quan You y H. Taisia, «Alcohol's harm to others:Reduced wellbeing and health status for those with heavy drinkers in their lives,» Addiction, pp. 1087-1094, 2011. 
-\bibitem{c6}M. Argyle y P. Hills, Oxford Happiness Questionnaire, 2008. 
-\bibitem{c7}questionpro.com, «Qué es SPSS y cómo utilizarlo,» questionpro.com, [En línea]. Available: https://www.questionpro.com/es/que-es-spss.html.
-\bibitem{c8}«How to Open a CSV file in SPSS,» surveygizmo, [En línea]. Available: https://help.surveygizmo.com/help/how-to-open-a-csv-file-in-spss.
-\bibitem{c9}G. d. I. E. U. D. VALENCIA, «SPSS: Análisis de FIabilidad,» 2010.
-\bibitem{c10}M. Aguayo Canela, «Como hacer una regresion logistica con SPSS "paso a paso",» fabis.org, [En línea]. Available: http://www.fabis.org/html/archivos/docuweb/Regres\_log\_1r.pdf..
-\bibitem{c11}E. M. M. A. E. E. K.E. Gamero Tafur, La felicidad en estudiantes universitarios de ciencias económicas: algunos determinantes socioeconómicos en la ciudad de Cartagena de Indias, 2017. 
-\bibitem{c12}J. Cardenas, «Qué es la regresión logística binaria y cómo analizarla en 6 pasos.[ networkianos.com],» 21 Febrero 2014. [En línea]. Available: http://networkianos.com/regresion-logistica-binaria/.
-\bibitem{c13}B. p. e. científicos, «App4Stats,» [En línea]. Available: http://app4stats.com/manual-ejemplo/.
-\bibitem{c14}M. Argyle, «Causes and correlates of happiness,» Well-Being: The foundations of hedonic psychology, pp. 353-373, 1999. 
-\bibitem{c15}COLPRENSA, «El Universal,» 9 Agosto 2015. [En línea]. Available: https://www.eluniversal.com.co/salud/cual-es-la-edad-ideal-para-casarse-202252-ATEU303506.
-\bibitem{c16}E. Kislev, Happy Singlehood: The Rising Acceptance and Celebration of Solo Living. 
-\bibitem{c17}E. Sibaja, «GQ,» 27 Marzo 2019. [En línea]. Available: https://www.gq.com.mx/estilo-de-vida/articulo/jovenes-prefieren-la-solteria-son-mas-felices.
-\bibitem{c18}A. I. Blandon Hincapie y L. M. Lopez Serna, «Comprensiones sobre pareja en la actualidad: Jovenes en busca de la estabilidad,» Revista Latinoamericana de Ciencias Sociales, Niñez y Juventud, pp. 505-517, 2016. 
-\bibitem{c19}M. F. Macaya Sazo, «Nivel de felicidad en estudiantes universitarios de la comuna de Talca,» 2015. 
-\bibitem{c20}Gallup Corporation, «Gallup,» 2005. [En línea]. Available: https://www.gallup.com/es-xm/176819/gallup-latin-america.aspx.
-\bibitem{c21}N. Barber, Why Atheism Will Replace Religion: The triumph of earthly pleasures over pie in the sky. 
-\bibitem{c22}A. Torres, «Psicologia y Mente,» [En línea]. Available: https://psicologiaymente.com/psicologia/habra-mas-ateos-que-creyentes.
+\bibitem{c1} R. Alarcon, «Desarrollo de una escala factorial para medir la felicidad,» Interamerican Journal of Psychology, 2006, pp. 95-102.
+\bibitem{c2}	M. R. F. Fernández D., Construyendo nuestra felicidad para ayudar a construirla, 2009, pp. 231-239.
+\bibitem{c3}	H. Figueiredo-Ferraz, S. Cardona y P. Gil Monte, «Desgaste psíquico y problemas de salud en estudiantes de psicologia,» Psicologia em Estudo, 2009. 
+\bibitem{c4}	M. Newcomb y P. Bentler, «Impact of adolescent drug use and social support on problems of young adults: A longitufinal study,» Journal of Abnormal, pp. 64-75, 1988. 
+\bibitem{c5}	S. Casswell, Ru Quan You y H. Taisia, «Alcohol's harm to others:Reduced wellbeing and health status for those with heavy drinkers in their lives,» Addiction, pp. 1087-1094, 2011. 
+\bibitem{c6}	M. Argyle y P. Hills, Oxford Happiness Questionnaire, 2008. 
+\bibitem{c7}	K. E. G. Tafur, E. M. M. Martínez y A. A. E. Espinoza, La felicidad en estudiantes universitarios de ciencias económicas: algunos determinantes socioeconómicos en la ciudad de Cartagena de Indias, 2017. 
+\bibitem{c8}	M. Argyle, «Causes and correlates of happiness,» Well-Being: The foundations of hedonic psychology, pp. 353-373, 1999. 
+\bibitem{c9}	COLPRENSA, «El Universal,» 9 Agosto 2015. [En línea]. Available: https://www.eluniversal.com.co/salud/cual-es-la-edad-ideal-para-casarse-202252-ATEU303506.
+\bibitem{c10}	E. Kislev, Happy Singlehood: The Rising Acceptance and Celebration of Solo Living. 
+\bibitem{c11}	A. I. Blandon Hincapie y L. M. Lopez Serna, «Comprensiones sobre pareja en la actualidad: Jovenes en busca de la estabilidad,» Revista Latinoamericana de Ciencias Sociales, Niñez y Juventud, pp. 505-517, 2016. 
+\bibitem{c12}	M. F. Macaya Sazo, «Nivel de felicidad en estudiantes universitarios de la comuna de Talca,» 2015. 
+\bibitem{c13}	Gallup Corporation, «Gallup,» 2005. [En línea]. Available: https://www.gallup.com/es-xm/176819/gallup-latin-america.aspx.
+
+
 
 
 

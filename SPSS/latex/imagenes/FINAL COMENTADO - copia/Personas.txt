@@ -1,0 +1,6 @@
+1:Ana:Garcia:CC :1000284521:F  :3125645010:3125645010:Ana@gmail.com:16/04/2000:19:Bogota:Colombia:Bogota:cra 51 b # 18-28:Torremolinos:Ingenieria:N  :0:Rosario:
+2:Raul:Pachon:CE :12345678:M  :2345678:3214567809:Raul@gmail.com:03/07/1980:39:Montevideo:Uruguay:Bogota:cra 6#9-7:Chico Alto:Ciencias Sociales:S  :2:Rosario:
+3:pedro:sanchez:CC :1231456:M  :254879:325654874:ps@gmail.com:17/03/2000:20:Medellin:Colombia::Medellin:cale 33 #45-15:San Diego:Areas de la salud:N  :0:San Jose:
+4:luisa:fernandez:CC :4567894:F  :2254854:3232555555:luisaF@hotmail.com:13/05/1999:20:Santiago:Chile::Bogota:cra 13 #41-23:Belen:Areas de la salud:S  :2:San Jose:
+
+
