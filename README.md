@@ -5,6 +5,6 @@ link encuesta felcidad:<br>
 https://docs.google.com/forms/d/1tujdbFbd7iRxP5noN7vQe_PnSqttnh0mrgn-R0ovaWQ/edit
 
 * Sebastian Mancera (20171020047)
-* Sebastian Zabala (20171020059)
+* Sebastian Martinez (20171020059)
 * Alvaro Zarabanda (20161020507)
 * Raul Pachon (20171020167)
